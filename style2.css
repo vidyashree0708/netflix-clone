@@ -1,0 +1,313 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 100vh;
+	box-sizing: border-box;
+    background-color: #333;
+    width: 100vw;
+}
+.container{
+	background:url(http://isquad.tv/wp-content/uploads/2018/08/Netflix-Background.jpg);
+	background-size: cover;
+	background-position: center;
+	padding: 25px 0;
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+}
+.container::before{
+	position: absolute;
+	left: 0;
+	top: 0;
+    height: 100%;
+    width: 100%;
+    content: '';
+    background: rgba(0,0,0,.6);
+    z-index: -1;
+}
+.logo
+{
+	margin-top: 20px; 
+	margin-left: 50px;
+	width: 20%;
+    top: 8%;
+    left: 90%;
+    height: 20%;
+    display: inline-block;
+}
+.logo img {
+    height: 10vh;
+    width: 50%;
+}
+.sign-btn
+{
+	position: absolute;
+	top:8%;
+	left: 90%;
+	background: #e50914;
+	color: #fff;
+	width: 80px;
+	height: 40px;
+	font-size: 15px;
+	opacity: 0.9;
+	border-radius: 2px;
+	border: 0;
+	cursor:pointer;
+}
+.sign-btn:hover{
+	opacity: 1;
+}
+.sub-container{
+	position: relative;
+	z-index: 2;
+	width: 65%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.banner-content{
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+    align-items: center;
+    text-align: center;
+}
+.title-main{
+	font-size: 64px;
+}
+.banner-content-inner h3{
+	font-size: 26px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+p{
+    color: #fff;
+    margin-right: 0px;
+    max-width: 100%;
+}
+.flex-form input[type="submit"]{
+	background-color: #e50914;
+	border:1px solid #e50914;
+	color: #fff;
+	padding: 0 30px;
+	cursor: pointer;
+	transition: 0.4s all;
+	font-size: 1.5rem;
+}
+.flex-form input[type="submit"]:hover{
+	background-color: #d73851;
+	border:1px solid #d73851;
+	}
+.flex-form{
+	display: flex;
+	z-index: 10;
+	position: relative;
+	width: 700px;
+	box-shadow: 4px 8px 16px rgba(0,0,0,0.3);
+	margin-bottom: 50px;
+	margin-left: 99px;
+	margin-right: 99px;
+}
+.flex-form >*{
+	border:0;
+	padding: 0 0 0 10px;
+	background:#fff;
+	line-height: 50px;
+	font-size: 1rem;
+	border-radius: 0;
+	outline: 0;
+}
+input[type="email"]{
+	flex-basis: 500px;
+}
+.tab1{
+	width: 65%;
+	margin-right: 3rem;
+}
+h1{
+	font-weight: bold;
+	font-family: helvetica;
+	text-align: center;
+	font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: .5rem;
+}
+h2{
+    text-align: center;
+	font-size: 1.625rem;
+    font-weight: 400;
+}
+.row1{
+	display: flex;
+	height: 70vh;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+	align-items: center	;
+	justify-content: center;
+	background-color: #000;
+	color: #fff;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	text-align: center;
+}
+.tab-1{
+	flex-flow: column wrap;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 2rem;
+}
+.tab-2{
+	flex-flow: column wrap;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 100px;
+}
+.tab-3{
+	flex-flow: column wrap;
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 100px;
+}
+.row2{
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	margin-bottom: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+	align-items: center	;
+	justify-content: center;
+	height: 70vh;
+}
+.row2 img{
+	width:70%;
+	margin-left: 20px;
+}
+.row3{
+	background-color: #000;
+	color: #fff;
+	display: flex;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
+	align-items: center	;
+	justify-content: center;
+	height: 70vh;
+}
+.row3 img{
+	padding-top: 50px;
+	margin-right: 3rem;
+}
+.faq{
+	display: flex;
+	flex-flow: column wrap;
+	background-color: #000;
+	color: #fff;
+	align-content: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.faq p {
+    margin-left: 200px;
+}
+.none li{
+	border-style: none;
+    background-color: #333;
+    border-left-width: 10px;
+    display: list-item;
+    list-style-type: none;
+    margin: 0 0 8px 8px;
+    padding: 10px 20px;
+    padding-bottom: 25px;
+    font-family: helvetica;
+    font-size: 1.6rem;
+    line-height: 1.1;
+    opacity: 0.9;
+}
+.none .material-icons{
+	font-size: 36px;
+	margin-left: 450px;
+	padding-top:  10px;
+
+}
+#icon1{ 
+       display: inline-block; 
+       margin-left: 600px; 
+}
+ 
+ #icon2{ 
+        display: inline-block; 
+}
+#icon3{ 
+        display: inline-block; 
+        margin-left: 550px; 
+} 
+#icon4{ 
+        display: inline-block; 
+         margin-left: 580px; 
+} 
+#icon5{ 
+        display: inline-block; 
+        margin-left: 450px; 
+}
+.footer{
+	width: 100vw;
+	display: block;
+	overflow: hidden;
+	padding: 70px 0;
+	box-sizing: border-box;
+	background-color: #000;
+
+}
+.footer p{
+		color: #757575;
+		font-size: 1em;
+		margin-left: 200px;
+		margin-bottom: 1.5rem;
+}
+.inner-footer{
+	display: block;
+	margin: 0 auto;
+	width: 1100px;
+	height: 100%;
+}
+.footer-col{
+	width: calc(21.666666667% - 20px);
+	margin-right: 10px;
+	float: left;
+	height: 100%;
+}
+.footer-col:last-child{
+	margin-right: 0;
+}
+.footer-col a{
+	font-family: 'arial';
+	margin-left: 200px; 
+	color: #757575;
+	display: block;
+	font-weight: 200;
+	width: 100%;
+	padding-bottom: 5px;
+	text-decoration: none;
+	font-size: 0.9em;
+    line-height: 1.9;
+}
